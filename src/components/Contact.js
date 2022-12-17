@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import TrackVisibility from "react-on-screen";
+import "animate.css";
 
 export default function Contact() {
   const formInitialDetails = {
@@ -26,7 +27,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("http://localhost:3000", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -123,7 +124,7 @@ export default function Contact() {
                             onFormUpdate("message", e.target.value)
                           }
                         ></textarea>
-                        <button type="submit">
+                        <button type="submit" className="submitSend">
                           <span>{buttonText}</span>
                         </button>
                       </Col>

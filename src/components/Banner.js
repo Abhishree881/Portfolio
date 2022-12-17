@@ -1,8 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { ArrowRightCircle, Tornado } from "react-bootstrap-icons";
 import headerImg from "../assets/img/logo.jpg";
 import { useState, useEffect } from "react";
+import TrackVisibility from "react-on-screen";
+
+import "animate.css";
 
 export default function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -58,30 +60,34 @@ export default function Banner() {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
-            <h1>
-              {`Hi I'm a `} <span className="wrap">{text}</span>
-            </h1>
-            <p>
-              I am currently pursuing B.Tech in Computer Science at IIIT
-              Kalyani. I am also current Vice President of the Student Council
-              of the Institute. I am very passionate about web development. I
-              like creating the front end of the web page, I like it when a web
-              page looks good and attractive and appealing. When I first got to
-              know about JavaScript, I felt like I got some superpowers as I
-              could give cool animations and amazing graphics to my webpage, I
-              am always amused when I see the best websites in the business, as
-              these new designs surely attract users. I am also an efficient
-              programmer in many languages like cpp, python and JavaScript.
-            </p>
-            <button
-              onClick={() => {
-                console.log("connect");
-              }}
-            >
-              Let's Connect
-              <ArrowRightCircle size={25} />
-            </button>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>
+                    {`Hi I'm a `} <span className="wrap">{text}</span>
+                  </h1>
+                  <p>
+                    I am currently pursuing B.Tech in Computer Science at IIIT
+                    Kalyani. I am also current Vice President of the Student
+                    Council of the Institute. I am very passionate about web
+                    development. I like creating the front end of the web page,
+                    I like it when a web page looks good and attractive and
+                    appealing. When I first got to know about JavaScript, I felt
+                    like I got some superpowers as I could give cool animations
+                    and amazing graphics to my webpage, I am always amused when
+                    I see the best websites in the business, as these new
+                    designs surely attract users. I am also an efficient
+                    programmer in many languages like cpp, python and
+                    JavaScript.
+                  </p>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img className="myHeader" src={headerImg} alt="Header img" />

@@ -187,8 +187,12 @@ span.navbar-text {
   background-color: transparent;
   transition: 0.3s ease-in-out;
 }
+.navbar-text button span a{
+  text-decoration: none;
+  color:#fff;
+}
 
-.navbar-text button span {
+.navbar-text button span a {
   z-index: 1;
 }
 
@@ -204,7 +208,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 
-.navbar-text button:hover {
+.navbar-text button:hover span a{
   color: #121212;
 }
 
@@ -673,6 +677,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.new-email-bx button a{
+  color: #fff;
+  text-decoration: none;
 }
 
 .new-email-bx::before {
@@ -727,4 +736,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.MyLogo{
+  border-radius: 20px;
+}
+.submitSend{
+  border-radius: 15px !important;
 }

@@ -70,13 +70,13 @@ export default function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/abhi-shree-451394201/">
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/abhishree.21/">
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/_.a.b.h.i.__.21._/">
                 <img src={navIcon3} alt="" />
               </a>
             </div>
@@ -86,7 +86,9 @@ export default function NavBar() {
                 console.log("connect");
               }}
             >
-              <span>Let's Connect</span>
+              <span>
+                <a href="https://github.com/Abhishree881">GitHub</a>
+              </span>
             </button>
           </span>
         </Navbar.Collapse>
