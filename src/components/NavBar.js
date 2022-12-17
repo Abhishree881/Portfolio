@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
-import logo from "../assets/img/logo.svg";
+import logo from "../assets/img/logo.jpg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
@@ -33,7 +33,7 @@ export default function NavBar() {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="logo" />
+          <img className="myLogo" src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@ export default function NavBar() {
             <Nav.Link
               href="#home"
               className={
-                activeLink === "home" ? "active navbar-link" : "navabar-link"
+                activeLink === "home" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("home")}
             >
@@ -52,20 +52,18 @@ export default function NavBar() {
             <Nav.Link
               href="#skills"
               className={
-                activeLink === "skills" ? "active navbar-link" : "navabar-link"
+                activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("skills")}
             >
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#projects"
+              href="#project"
               className={
-                activeLink === "projects"
-                  ? "active navbar-link"
-                  : "navabar-link"
+                activeLink === "project" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("projects")}
+              onClick={() => onUpdateActiveLink("project")}
             >
               Projects
             </Nav.Link>
