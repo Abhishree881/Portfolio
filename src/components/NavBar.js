@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
-import logo from "../assets/img/logo.jpg";
+import logo from "../assets/img/logo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
@@ -70,13 +70,19 @@ export default function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/abhi-shree-451394201/">
+              <a
+                href="https://www.linkedin.com/in/abhishree-451394201/"
+                target="_blank"
+              >
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="https://www.facebook.com/abhishree.21/">
+              <a href="https://www.facebook.com/abhishree.21/" target="_blank">
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="https://www.instagram.com/_.a.b.h.i.__.21._/">
+              <a
+                href="https://www.instagram.com/_.a.b.h.i.__.21._/"
+                target="_blank"
+              >
                 <img src={navIcon3} alt="" />
               </a>
             </div>
@@ -87,7 +93,9 @@ export default function NavBar() {
               }}
             >
               <span>
-                <a href="https://github.com/Abhishree881">GitHub</a>
+                <a href="https://github.com/Abhishree881" target="_blank">
+                  GitHub
+                </a>
               </span>
             </button>
           </span>
