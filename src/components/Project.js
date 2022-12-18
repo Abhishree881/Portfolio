@@ -23,7 +23,7 @@ export default function () {
       link: "https://laayak-web-881.web.app/",
     },
     {
-      title: "WoC 2.0 ",
+      title: "WOC 2.0 ",
       description: "An app to host participants throughout program",
       imgUrl: projImg3,
       link: "https://woc-2-6e9fb.web.app/",
