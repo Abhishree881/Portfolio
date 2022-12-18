@@ -14,16 +14,19 @@ export default function () {
       title: "Spotify Clone",
       description: "Clone of the famous music streaming app Spotify",
       imgUrl: projImg1,
+      link: "https://todo-21922.web.app/",
     },
     {
       title: "Laayak Web",
       description: "A web app to manage classes, projects and links",
       imgUrl: projImg2,
+      link: "https://laayak-web-881.web.app/",
     },
     {
-      title: "Todo App ",
-      description: "An app to keep track of your tasks",
+      title: "WoC 2.0 ",
+      description: "An app to host participants throughout program",
       imgUrl: projImg3,
+      link: "https://woc-2-6e9fb.web.app/",
     },
   ];
   return (
