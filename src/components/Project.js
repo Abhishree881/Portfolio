@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
@@ -14,7 +15,7 @@ export default function () {
       title: "Spotify Clone",
       description: "Clone of the famous music streaming app Spotify",
       imgUrl: projImg1,
-      link: "https://todo-21922.web.app/",
+      link: "https://abhishree881.github.io/Spotify-clone/",
     },
     {
       title: "Laayak Web",
@@ -26,6 +27,12 @@ export default function () {
       title: "WOC 2.0 ",
       description: "An app to host participants throughout program",
       imgUrl: projImg3,
+      link: "https://woc-2-6e9fb.web.app/",
+    },
+    {
+      title: "todo",
+      description: "An app to manage your tasks in realtime",
+      imgUrl: projImg4,
       link: "https://woc-2-6e9fb.web.app/",
     },
   ];
