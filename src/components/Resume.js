@@ -8,7 +8,7 @@ export default function Resume({ status, message, onValidated }) {
         <Row>
           <Col lg={12} md={6} xl={5}>
             <h3>
-              Click the button to <br></br>Donload full Resume
+              Click the button to <br></br>Download full Resume
             </h3>
           </Col>
           <Col md={6} xl={7}>
