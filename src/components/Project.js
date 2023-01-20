@@ -33,7 +33,7 @@ export default function () {
       title: "todo",
       description: "An app to manage your tasks in realtime",
       imgUrl: projImg4,
-      link: "https://woc-2-6e9fb.web.app/",
+      link: "https://todo-21922.web.app/",
     },
   ];
   return (

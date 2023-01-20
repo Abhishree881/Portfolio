@@ -34,7 +34,7 @@ export default function Skills() {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                I have been practising many skills recently and have developed
+                I have been practicing many skills recently and have developed
                 fluency in them<br></br> Here is my personal evaluation on my
                 skills :)
               </p>
