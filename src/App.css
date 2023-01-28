@@ -1,3 +1,10 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 1px 1px 6px rgba(240, 232, 232, 0.5);
+}
 /************ Custom Font ************/
 @font-face {
   font-family: Centra;
