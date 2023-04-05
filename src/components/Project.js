@@ -5,6 +5,7 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
@@ -12,10 +13,10 @@ import "animate.css";
 export default function () {
   const projects = [
     {
-      title: "Spotify Clone",
-      description: "Clone of the famous music streaming app Spotify",
-      imgUrl: projImg1,
-      link: "https://abhishree881.github.io/Spotify-clone/",
+      title: "Chitthi Chat App",
+      description: "A chat app to connect with your friends",
+      imgUrl: projImg5,
+      link: "https://chatappdbms.web.app/",
     },
     {
       title: "Laayak Web",
@@ -34,6 +35,12 @@ export default function () {
       description: "An app to manage your tasks in realtime",
       imgUrl: projImg4,
       link: "https://todo-21922.web.app/",
+    },
+    {
+      title: "Spotify Clone",
+      description: "Clone of the famous music streaming app Spotify",
+      imgUrl: projImg1,
+      link: "https://abhishree881.github.io/Spotify-clone/",
     },
   ];
   return (
