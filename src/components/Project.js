@@ -6,6 +6,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
@@ -13,10 +14,10 @@ import "animate.css";
 export default function () {
   const projects = [
     {
-      title: "Chitthi Chat App",
-      description: "A chat app to connect with your friends",
-      imgUrl: projImg5,
-      link: "https://chatappdbms.web.app/",
+      title: "Musicify Music App",
+      description: "A music app to play the main parts of the song",
+      imgUrl: projImg6,
+      link: "https://spotify-kolloni.web.app/",
     },
     {
       title: "Laayak Web",
@@ -29,6 +30,12 @@ export default function () {
       description: "An app to host participants throughout program",
       imgUrl: projImg3,
       link: "https://woc-2-6e9fb.web.app/",
+    },
+    {
+      title: "Chitthi Chat App",
+      description: "A chat app to connect with your friends",
+      imgUrl: projImg5,
+      link: "https://chatappdbms.web.app/",
     },
     {
       title: "todo",
