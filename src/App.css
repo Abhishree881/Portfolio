@@ -95,7 +95,7 @@ select:focus {
 }
 
 p.success {
-  color: green;
+  color: lawngreen;
 }
 
 p.danger {

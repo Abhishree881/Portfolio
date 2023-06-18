@@ -33,7 +33,7 @@ export default function Footer() {
                 <img src={navIcon3} alt="Icon" />
               </a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Aspiring Software Developer</p>
           </Col>
         </Row>
       </Container>

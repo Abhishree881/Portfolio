@@ -71,7 +71,7 @@ export default function Banner() {
                   <h1>
                     {`Hi I'm a `} <span className="wrap">{text}</span>
                   </h1>
-                  <p>
+                  <p style={{ backgroundColor: "rgb(0,0,0,0.6)" }}>
                     I am currently pursuing B.Tech in Computer Science at IIIT
                     Kalyani. I am also current Vice President of the Student
                     Council of the Institute. I am very passionate about web
@@ -83,7 +83,8 @@ export default function Banner() {
                     I see the best websites in the business, as these new
                     designs surely attract users. I am also an efficient
                     programmer in many languages like cpp, python and
-                    JavaScript.
+                    JavaScript. I am also a machine learning enthusiast and is
+                    excited by system automation and Artificial Intelligence
                   </p>
                 </div>
               )}

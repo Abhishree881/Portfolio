@@ -160,12 +160,8 @@ export default function Contact() {
                             onFormUpdate("message", e.target.value)
                           }
                         ></textarea>
-                        <button type="submit" className="submitSend">
-                          <span>{buttonText}</span>
-                        </button>
-                      </Col>
-                      {status.message && (
-                        <Col>
+                        {status.message && (
+                          // <Col>
                           <p
                             className={
                               status.success === false ? "danger" : "success"
@@ -173,8 +169,12 @@ export default function Contact() {
                           >
                             {status.message}
                           </p>
-                        </Col>
-                      )}
+                          // </Col>
+                        )}
+                        <button type="submit" className="submitSend">
+                          <span>{buttonText}</span>
+                        </button>
+                      </Col>
                     </Row>
                   </form>
                 </div>

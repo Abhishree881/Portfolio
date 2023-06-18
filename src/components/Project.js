@@ -14,10 +14,10 @@ import "animate.css";
 export default function () {
   const projects = [
     {
-      title: "Musicify Music App",
-      description: "A music app to play the main parts of the song",
-      imgUrl: projImg6,
-      link: "https://spotify-kolloni.web.app/",
+      title: "WOC 2.0 ",
+      description: "An app to host participants throughout program",
+      imgUrl: projImg3,
+      link: "https://woc-2-6e9fb.web.app/",
     },
     {
       title: "Laayak Web",
@@ -26,10 +26,19 @@ export default function () {
       link: "https://laayak-web-881.web.app/",
     },
     {
-      title: "WOC 2.0 ",
-      description: "An app to host participants throughout program",
-      imgUrl: projImg3,
-      link: "https://woc-2-6e9fb.web.app/",
+      title: "Spotify Clone",
+      description: "Clone of the famous music streaming app Spotify",
+      imgUrl: projImg1,
+      link: "https://abhishree881.github.io/Spotify-clone/",
+    },
+  ];
+
+  const solo = [
+    {
+      title: "Musicify Music App",
+      description: "A music app to play the main parts of the song",
+      imgUrl: projImg6,
+      link: "https://spotify-kolloni.web.app/",
     },
     {
       title: "Chitthi Chat App",
@@ -42,12 +51,6 @@ export default function () {
       description: "An app to manage your tasks in realtime",
       imgUrl: projImg4,
       link: "https://todo-21922.web.app/",
-    },
-    {
-      title: "Spotify Clone",
-      description: "Clone of the famous music streaming app Spotify",
-      imgUrl: projImg1,
-      link: "https://abhishree881.github.io/Spotify-clone/",
     },
   ];
   return (
@@ -76,13 +79,13 @@ export default function () {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Solo</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">Team</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">Others</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -93,25 +96,28 @@ export default function () {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((projects, index) => {
+                          {solo.map((projects, index) => {
                             return <ProjectCard key={index} {...projects} />;
                           })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
+                        <Row>
+                          {projects.map((projects, index) => {
+                            return <ProjectCard key={index} {...projects} />;
+                          })}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
                         <p>
                           I was also part of a college project where I worked
                           with Deep Learning and lots of datasets and python
                           libraries. The project is an object detection app for
-                          blind people to help them in their day-to-day lives.
-                        </p>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>
-                          I have also worked in a team where we created a python
+                          blind people to help them in their day-to-day lives. I
+                          have also worked in a team where we created a python
                           application to analyse any company's balance sheets
                           and finance reports and calculate the company's
-                          health.
+                          health. Both the projects can be found on my GitHub
                         </p>
                       </Tab.Pane>
                     </Tab.Content>
