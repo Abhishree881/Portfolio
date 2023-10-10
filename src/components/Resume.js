@@ -15,7 +15,7 @@ export default function Resume({ status, message, onValidated }) {
             <div className="new-email-bx">
               <button type="submit">
                 <a
-                  href="https://drive.google.com/file/d/1hUdxRaqVwI5-Ngp5jtm-Gq2NQa7xgz4_/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1Y0tVjkm7jq5ec3sok59v7gYMbWoV3Fen/view?usp=sharing"
                   target="_blank"
                   download
                 >

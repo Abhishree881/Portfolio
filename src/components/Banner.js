@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import headerImg from "../assets/img/mylogo.jpg";
+import headerImg from "../assets/img/logo.jpg";
 import { useState, useEffect } from "react";
 import TrackVisibility from "react-on-screen";
 
