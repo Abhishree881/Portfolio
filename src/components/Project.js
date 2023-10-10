@@ -35,7 +35,7 @@ export default function () {
 
   const solo = [
     {
-      title: "Musicify Music App",
+      title: "Ārōhanam Music App",
       description: "A music app to play the main parts of the song",
       imgUrl: projImg6,
       link: "https://spotify-kolloni.web.app/",

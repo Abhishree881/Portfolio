@@ -45,6 +45,7 @@ export default function Skills() {
               >
                 <div className="item">
                   <img src={meter1} alt="Image" />
+                  {/* <tag className="metric">75%</tag> */}
                   <h5>Leadership</h5>
                 </div>
                 <div className="item">

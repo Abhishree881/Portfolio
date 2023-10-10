@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.item {
+  position: relative;
+}
+
+.metric {
+  position: absolute;
+  left: 41%;
+  font-weight: 900;
+  font-size: 180%;
+  top: 30%;
+}

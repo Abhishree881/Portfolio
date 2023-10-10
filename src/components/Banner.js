@@ -72,19 +72,28 @@ export default function Banner() {
                     {`Hi I'm a `} <span className="wrap">{text}</span>
                   </h1>
                   <p style={{ backgroundColor: "rgb(0,0,0,0.6)" }}>
-                    I am currently pursuing B.Tech in Computer Science at IIIT
-                    Kalyani. I am also current Vice President of the Student
-                    Council of the Institute. I am very passionate about web
-                    development. I like creating the front end of the web page,
-                    I like it when a web page looks good and attractive and
-                    appealing. When I first got to know about JavaScript, I felt
-                    like I got some superpowers as I could give cool animations
-                    and amazing graphics to my webpage, I am always amused when
-                    I see the best websites in the business, as these new
-                    designs surely attract users. I am also an efficient
-                    programmer in many languages like cpp, python and
-                    JavaScript. I am also a machine learning enthusiast and is
-                    excited by system automation and Artificial Intelligence
+                    I'm currently a B.Tech student majoring in Computer Science
+                    at IIIT Kalyani. I also have the privilege of serving as the
+                    Vice President of the Student Council at our institute. One
+                    of my greatest passions in the world of technology is web
+                    development. I'm constantly amazed by the creativity and
+                    innovation in web design, and whenever I come across a
+                    striking website, I can't resist the urge to try and
+                    replicate it. It's like having a superpower – it enables me
+                    to turn even the most ordinary websites into something
+                    extraordinary, complete with eye-catching graphics and
+                    animations, all while ensuring a robust backend. I've been
+                    on this web development journey for over two years now, and
+                    it's been a tremendous learning experience. Along the way,
+                    I've had the opportunity to participate in hackathons, work
+                    with college website teams, and complete two enriching web
+                    development internships. These experiences have not only
+                    expanded my skill set but also prepared me for effective
+                    collaboration and contribution in this field. Beyond web
+                    development, I'm also proficient in programming languages
+                    like C/C++, Python, and JavaScript. My interests extend to
+                    machine learning, system automation, and artificial
+                    intelligence – areas that I find incredibly exciting.
                   </p>
                 </div>
               )}
