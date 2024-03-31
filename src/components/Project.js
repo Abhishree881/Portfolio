@@ -7,6 +7,8 @@ import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
+import projImg7 from "../assets/img/project-img7.png";
+import projImg8 from "../assets/img/project-img8.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
@@ -52,6 +54,18 @@ export default function () {
       imgUrl: projImg4,
       link: "https://todo-21922.web.app/",
     },
+    {
+      title: "Trello Clone",
+      description: "An app to keep track of your tasks",
+      imgUrl: projImg7,
+      link: "https://trello-abhishree881.vercel.app/",
+    },
+    {
+      title: "Twitter Clone",
+      description: "An app to socialize",
+      imgUrl: projImg8,
+      link: "https://twiiter-clone-wheat.vercel.app/",
+    },
   ];
   return (
     <section className="project" id="project">
@@ -79,13 +93,13 @@ export default function () {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Solo</Nav.Link>
+                        <Nav.Link eventKey="first">Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Team</Nav.Link>
+                        <Nav.Link eventKey="second">Contributions</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Others</Nav.Link>
+                        <Nav.Link eventKey="third">College</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content

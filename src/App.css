@@ -1,10 +1,12 @@
 ::-webkit-scrollbar {
   width: 5px;
 }
+
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 1px 1px 6px rgba(240, 232, 232, 0.5);
 }
+
 /************ Custom Font ************/
 @font-face {
   font-family: Centra;
@@ -194,9 +196,10 @@ span.navbar-text {
   background-color: transparent;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button span a{
+
+.navbar-text button span a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
 }
 
 .navbar-text button span a {
@@ -215,7 +218,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 
-.navbar-text button:hover span a{
+.navbar-text button:hover span a {
   color: #121212;
 }
 
@@ -279,7 +282,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
-.myLogo{
+.myLogo {
   height: 13vh;
   width: 13vh;
   border-radius: 20px;
@@ -369,7 +372,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-.myHeader{
+.myHeader {
   border-radius: 50%;
 }
 
@@ -513,7 +516,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   /* width: 25vw; */
   /* height: 15.9vw; */
   cursor: pointer;
-  box-shadow: 1px 2px 8px #AA367C;
+  box-shadow: inset 0px 0px 8px #AA367C;
+  padding: 10px;
+}
+
+.proj-imgbx img {
+  height: 14.9vw;
+  border-radius: 5px;
 }
 
 .proj-imgbx::before {
@@ -521,13 +530,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   opacity: 0.85;
   position: absolute;
-  width: 100%;
+  width: calc(100% - 20px);
   height: 0;
   transition: 0.4s ease-in-out;
+  border-radius: 5px;
 }
 
 .proj-imgbx:hover::before {
-  height: 100%;
+  height: calc(100% - 20px);
 }
 
 .proj-txtx {
@@ -540,12 +550,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
 }
-.projectslink{
+
+.projectslink {
   text-decoration: none;
   color: #fff;
 }
 
-.projectslink:hover{
+.projectslink:hover {
   color: #fff;
 }
 
@@ -577,7 +588,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contacts Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
@@ -703,7 +714,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
   justify-content: center;
 }
-.new-email-bx button a{
+
+.new-email-bx button a {
   color: #fff;
   text-decoration: none;
 }
@@ -761,9 +773,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
-.MyLogo{
+
+.MyLogo {
   border-radius: 20px;
 }
-.submitSend{
+
+.submitSend {
   border-radius: 15px !important;
 }

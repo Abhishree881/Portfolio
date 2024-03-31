@@ -71,7 +71,7 @@ export default function Banner() {
                   <h1>
                     {`Hi I'm a `} <span className="wrap">{text}</span>
                   </h1>
-                  <p style={{ backgroundColor: "rgb(0,0,0,0.6)" }}>
+                  <p>
                     I'm currently a B.Tech student majoring in Computer Science
                     at IIIT Kalyani. I also have the privilege of serving as the
                     Vice President of the Student Council at our institute. One

@@ -33,7 +33,7 @@ export default function Footer() {
                 <img src={navIcon3} alt="Icon" />
               </a>
             </div>
-            <p>Aspiring Software Developer</p>
+            <p>Software Developer/Engineer</p>
           </Col>
         </Row>
       </Container>
