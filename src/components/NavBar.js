@@ -71,7 +71,7 @@ export default function NavBar() {
           <span className="navbar-text">
             <div className="social-icon">
               <a
-                href="https://www.linkedin.com/in/abhishree-451394201/"
+                href="https://www.linkedin.com/in/abhishree-dev/"
                 target="_blank"
               >
                 <img src={navIcon1} alt="" />
@@ -80,7 +80,7 @@ export default function NavBar() {
                 <img src={navIcon2} alt="" />
               </a>
               <a
-                href="https://www.instagram.com/_.a.b.h.i.__.21._/"
+                href="https://www.instagram.com/_abhi_xxi_/"
                 target="_blank"
               >
                 <img src={navIcon3} alt="" />

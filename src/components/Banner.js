@@ -14,8 +14,8 @@ export default function Banner() {
   const [index, setIndex] = useState(1);
   const toRotate = [
     "MERN Stack Developer",
-    "Competitive Programmer",
-    "Video Editor",
+    "Ruby on Rails Developer",
+    "React Developer",
   ];
   const period = 1000;
 
@@ -72,28 +72,23 @@ export default function Banner() {
                     {`Hi I'm a `} <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    I'm currently a B.Tech student majoring in Computer Science
-                    at IIIT Kalyani. I also have the privilege of serving as the
-                    Vice President of the Student Council at our institute. One
-                    of my greatest passions in the world of technology is web
-                    development. I'm constantly amazed by the creativity and
-                    innovation in web design, and whenever I come across a
-                    striking website, I can't resist the urge to try and
-                    replicate it. It's like having a superpower – it enables me
-                    to turn even the most ordinary websites into something
-                    extraordinary, complete with eye-catching graphics and
-                    animations, all while ensuring a robust backend. I've been
-                    on this web development journey for over two years now, and
-                    it's been a tremendous learning experience. Along the way,
-                    I've had the opportunity to participate in hackathons, work
-                    with college website teams, and complete two enriching web
-                    development internships. These experiences have not only
-                    expanded my skill set but also prepared me for effective
-                    collaboration and contribution in this field. Beyond web
-                    development, I'm also proficient in programming languages
-                    like C/C++, Python, and JavaScript. My interests extend to
-                    machine learning, system automation, and artificial
-                    intelligence – areas that I find incredibly exciting.
+                    Passionate and skilled Full Stack Developer currently
+                    working at Superbolter. I specialize in building robust and
+                    scalable web applications, combining a deep understanding of
+                    both front-end and back-end technologies. With a strong
+                    foundation in Computer Science and Engineering from IIIT
+                    Kalyani (BTech), I have honed my skills in various
+                    programming languages, frameworks, and tools. At
+                    Superbolter, I have been integral in designing and
+                    implementing features that enhance user experience and
+                    improve application performance. My expertise spans across
+                    the entire development lifecycle, from conceptualization and
+                    design to deployment and maintenance. I thrive in
+                    collaborative environments and enjoy working with
+                    cross-functional teams to deliver high-quality solutions.
+                    Continuously learning and staying updated with the latest
+                    industry trends, I am committed to driving innovation and
+                    excellence in every project I undertake.
                   </p>
                 </div>
               )}
