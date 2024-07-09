@@ -5,9 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
 import logo from "../assets/img/logo.png";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
 export default function NavBar() {
@@ -63,7 +61,9 @@ export default function NavBar() {
             <Nav.Link
               href="#experience"
               className={
-                activeLink === "experience" ? "active navbar-link" : "navbar-link"
+                activeLink === "experience"
+                  ? "active navbar-link"
+                  : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("experience")}
             >
@@ -80,15 +80,14 @@ export default function NavBar() {
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
-            {scrolled ? null : (
-              <div className="social-icon">
-                <a
-                  href="https://www.linkedin.com/in/abhishree-dev/"
-                  target="_blank"
-                >
-                  <FaLinkedinIn />
-                </a>
-                {/* <a href="https://www.facebook.com/abhishree.21/" target="_blank">
+            <div className="social-icon">
+              <a
+                href="https://www.linkedin.com/in/abhishree-dev/"
+                target="_blank"
+              >
+                <FaLinkedinIn />
+              </a>
+              {/* <a href="https://www.facebook.com/abhishree.21/" target="_blank">
                 <FaFacebookF />
               </a>
               <a
@@ -97,14 +96,13 @@ export default function NavBar() {
               >
                 <FaInstagram />
               </a> */}
-                <a href="https://x.com/abhishree881" target="_blank">
-                  <FaXTwitter />
-                </a>
-                <a href="https://github.com/Abhishree881" target="_blank">
-                  <FaGithub />
-                </a>
-              </div>
-            )}
+              <a href="https://x.com/abhishree881" target="_blank">
+                <FaXTwitter />
+              </a>
+              <a href="https://github.com/Abhishree881" target="_blank">
+                <FaGithub />
+              </a>
+            </div>
             <Nav.Link href="#resume">
               <button
                 className="vvd"
