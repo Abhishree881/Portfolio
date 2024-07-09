@@ -9,7 +9,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="footer">
-      <Container>
+      <Container id="resume">
         <Row className="align-items-center">
           <Resume />
           <Col size={12} sm={6}>

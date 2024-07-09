@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import headerImg from "../assets/img/logo.jpg";
+import headerImg from "../assets/img/newLogo.png";
 import { useState, useEffect } from "react";
 import TrackVisibility from "react-on-screen";
 
@@ -67,7 +67,7 @@ export default function Banner() {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  {/* <span className="tagline">Welcome to my Portfolio</span> */}
                   <h1>
                     {`Hi I'm a `} <span className="wrap">{text}</span>
                   </h1>

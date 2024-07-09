@@ -11,25 +11,42 @@ import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
+import Reveal, { Slide } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 import "animate.css";
+
+const customAnimation1 = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
 
 export default function () {
   const projects = [
     {
-      title: "WOC 2.0 ",
-      description: "An app to host participants throughout program",
+      title: "WOC 2.0",
+      description:
+        "A comprehensive platform designed to support participants during the Winter of Code program, providing tools for collaboration, project management, and progress tracking.",
       imgUrl: projImg3,
       link: "https://woc-2-6e9fb.web.app/",
     },
     {
       title: "Laayak Web",
-      description: "A web app to manage classes, projects and links",
+      description:
+        "A versatile web application for organizing classes, managing projects, and storing important links, aimed at enhancing productivity and collaboration.",
       imgUrl: projImg2,
       link: "https://laayak-web-881.web.app/",
     },
     {
       title: "Spotify Clone",
-      description: "Clone of the famous music streaming app Spotify",
+      description:
+        "A meticulously crafted replica of the popular Spotify music streaming app, featuring a similar interface and functionality for an authentic user experience.",
       imgUrl: projImg1,
       link: "https://abhishree881.github.io/Spotify-clone/",
     },
@@ -38,35 +55,41 @@ export default function () {
   const solo = [
     {
       title: "Ārōhanam Music App",
-      description: "A music app to play the main parts of the song",
+      description:
+        "A user-friendly music application that allows you to play your favorite songs and view synchronized lyrics, enhancing your listening experience.",
       imgUrl: projImg6,
       link: "https://arohonam.web.app/",
     },
     {
       title: "Chitthi Chat App",
-      description: "A chat app to connect with your friends",
+      description:
+        "An intuitive chat application designed for seamless communication with friends, featuring real-time mood detection and a user-friendly interface.",
       imgUrl: projImg5,
       link: "https://chatappdbms.web.app/",
     },
     {
-      title: "todo",
-      description: "An app to manage your tasks in realtime",
+      title: "Todo",
+      description:
+        "A real-time task management application to help you organize and keep track of your daily tasks efficiently.",
       imgUrl: projImg4,
       link: "https://todo-21922.web.app/",
     },
     {
       title: "Trello Clone",
-      description: "An app to keep track of your tasks",
+      description:
+        "An efficient task management app inspired by Trello, designed to help you organize and track your tasks and projects effectively.",
       imgUrl: projImg7,
       link: "https://trello-abhishree881.vercel.app/",
     },
     {
       title: "Twitter Clone",
-      description: "An app to socialize",
+      description:
+        "A social networking application that emulates the core features of Twitter, allowing users to share updates and connect with others.",
       imgUrl: projImg8,
       link: "https://twiiter-clone-wheat.vercel.app/",
     },
   ];
+
   return (
     <section className="project" id="project">
       <Container>
@@ -79,12 +102,12 @@ export default function () {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Projects</h2>
+                  <Slide direction="down">
+                    <h2>Tasks</h2>
+                  </Slide>
                   <p>
-                    I have also worked on many projects using my web development
-                    skills. Some are contributions to an open-source project,
-                    some are team projects, and some are personal projects. All
-                    of them are displayed below.
+                    I'm a software developer who loves creating beautiful and
+                    performant web experiences.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -98,9 +121,9 @@ export default function () {
                       <Nav.Item>
                         <Nav.Link eventKey="second">Contributions</Nav.Link>
                       </Nav.Item>
-                      <Nav.Item>
+                      {/* <Nav.Item>
                         <Nav.Link eventKey="third">College</Nav.Link>
-                      </Nav.Item>
+                      </Nav.Item> */}
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
@@ -109,18 +132,22 @@ export default function () {
                       }
                     >
                       <Tab.Pane eventKey="first">
-                        <Row>
-                          {solo.map((projects, index) => {
-                            return <ProjectCard key={index} {...projects} />;
-                          })}
-                        </Row>
+                        <Reveal cascade keyframes={customAnimation1}>
+                          <Row>
+                            {solo.map((projects, index) => {
+                              return <ProjectCard key={index} {...projects} />;
+                            })}
+                          </Row>
+                        </Reveal>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <Row>
-                          {projects.map((projects, index) => {
-                            return <ProjectCard key={index} {...projects} />;
-                          })}
-                        </Row>
+                        <Reveal cascade keyframes={customAnimation1}>
+                          <Row>
+                            {projects.map((projects, index) => {
+                              return <ProjectCard key={index} {...projects} />;
+                            })}
+                          </Row>
+                        </Reveal>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
@@ -142,7 +169,7 @@ export default function () {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right-1" src={colorSharp2}></img>
     </section>
   );
 }

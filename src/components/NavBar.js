@@ -4,9 +4,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
 import logo from "../assets/img/logo.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -40,7 +42,7 @@ export default function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link
+            {/* <Nav.Link
               href="#home"
               className={
                 activeLink === "home" ? "active navbar-link" : "navbar-link"
@@ -48,7 +50,7 @@ export default function NavBar() {
               onClick={() => onUpdateActiveLink("home")}
             >
               Home
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link
               href="#skills"
               className={
@@ -57,6 +59,15 @@ export default function NavBar() {
               onClick={() => onUpdateActiveLink("skills")}
             >
               Skills
+            </Nav.Link>
+            <Nav.Link
+              href="#experience"
+              className={
+                activeLink === "experience" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("experience")}
+            >
+              Experience
             </Nav.Link>
             <Nav.Link
               href="#project"
@@ -69,35 +80,41 @@ export default function NavBar() {
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
-            <div className="social-icon">
-              <a
-                href="https://www.linkedin.com/in/abhishree-dev/"
-                target="_blank"
-              >
-                <img src={navIcon1} alt="" />
-              </a>
-              <a href="https://www.facebook.com/abhishree.21/" target="_blank">
-                <img src={navIcon2} alt="" />
+            {scrolled ? null : (
+              <div className="social-icon">
+                <a
+                  href="https://www.linkedin.com/in/abhishree-dev/"
+                  target="_blank"
+                >
+                  <FaLinkedinIn />
+                </a>
+                {/* <a href="https://www.facebook.com/abhishree.21/" target="_blank">
+                <FaFacebookF />
               </a>
               <a
                 href="https://www.instagram.com/_abhi_xxi_/"
                 target="_blank"
               >
-                <img src={navIcon3} alt="" />
-              </a>
-            </div>
-            <button
-              className="vvd"
-              onClick={() => {
-                console.log("connect");
-              }}
-            >
-              <span>
-                <a href="https://github.com/Abhishree881" target="_blank">
-                  GitHub
+                <FaInstagram />
+              </a> */}
+                <a href="https://x.com/abhishree881" target="_blank">
+                  <FaXTwitter />
                 </a>
-              </span>
-            </button>
+                <a href="https://github.com/Abhishree881" target="_blank">
+                  <FaGithub />
+                </a>
+              </div>
+            )}
+            <Nav.Link href="#resume">
+              <button
+                className="vvd"
+                onClick={() => {
+                  console.log("connect");
+                }}
+              >
+                <span>Resume</span>
+              </button>
+            </Nav.Link>
           </span>
         </Navbar.Collapse>
       </Container>
