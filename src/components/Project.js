@@ -53,13 +53,13 @@ export default function () {
   ];
 
   const solo = [
-    {
-      title: "Ārōhanam Music App",
-      description:
-        "A user-friendly music application that allows you to play your favorite songs and view synchronized lyrics, enhancing your listening experience.",
-      imgUrl: projImg6,
-      link: "https://arohonam.web.app/",
-    },
+    // {
+    //   title: "Ārōhanam Music App",
+    //   description:
+    //     "A user-friendly music application that allows you to play your favorite songs and view synchronized lyrics, enhancing your listening experience.",
+    //   imgUrl: projImg6,
+    //   link: "https://arohonam.web.app/",
+    // },
     {
       title: "Chitthi Chat App",
       description:
