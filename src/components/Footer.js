@@ -27,7 +27,7 @@ export default function Footer() {
                 <FaFacebookF />
               </a>
               <a
-                href="https://www.instagram.com/_.a.b.h.i.__.21._/"
+                href="https://www.instagram.com/_abhi_xxi_/"
                 target="_blank"
               >
                 <FaInstagram />
