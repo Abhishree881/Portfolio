@@ -13,11 +13,12 @@ export default function Banner() {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "MERN Stack Developer",
+    "Software Engineer",
+    "Full Stack Developer",
     "Ruby on Rails Developer",
     "React Developer",
   ];
-  const period = 1000;
+  const period = 500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -69,26 +70,37 @@ export default function Banner() {
                 >
                   {/* <span className="tagline">Welcome to my Portfolio</span> */}
                   <h1>
-                    {`Hi I'm a `} <span className="wrap">{text}</span>
+                    {`Hi I'm a `}
+                    <span className="wrap">{text}</span>
+                    <span className="blinking-cursor">|</span>
                   </h1>
                   <p>
-                    Passionate and skilled Full Stack Developer currently
-                    working at Superbolter. I specialize in building robust and
-                    scalable web applications, combining a deep understanding of
-                    both front-end and back-end technologies. With a strong
-                    foundation in Computer Science and Engineering from IIIT
-                    Kalyani (BTech), I have honed my skills in various
-                    programming languages, frameworks, and tools. At
-                    Superbolter, I have been integral in designing and
-                    implementing features that enhance user experience and
-                    improve application performance. My expertise spans across
-                    the entire development lifecycle, from conceptualization and
-                    design to deployment and maintenance. I thrive in
-                    collaborative environments and enjoy working with
-                    cross-functional teams to deliver high-quality solutions.
-                    Continuously learning and staying updated with the latest
-                    industry trends, I am committed to driving innovation and
-                    excellence in every project I undertake.
+                    Hey there! I'm a curious, creative, and driven Full Stack
+                    Developer currently working at HashedIn. With a B.Tech in
+                    Computer Science and Engineering from IIIT Kalyani, I’ve
+                    built a strong foundation in both front-end and back-end
+                    development—and I absolutely love bringing ideas to life on
+                    the web. <br /> <br />
+                    Over the years, I’ve worked across the full
+                    stack—designing clean UIs, building solid APIs, and
+                    optimizing performance for smooth user experiences. I enjoy
+                    working with technologies like React.js, Next.js, Node.js,
+                    TypeScript, Three.js, WebGL, Tailwind, and Firebase (just to
+                    name a few). I’m especially drawn to projects that blend
+                    logic with creativity—like interactive UIs, real-time apps,
+                    or 3D visualizations. <br /> <br />
+                    What keeps me going? The joy of
+                    solving meaningful problems, collaborating with awesome
+                    people, and constantly learning something new. Whether it’s
+                    debugging a tricky issue or pushing pixels into place, I
+                    find purpose (and fun!) in the details. <br /> <br />
+                    When I’m not coding, you can find me exploring the latest
+                    tech trends, diving into a good book, or experimenting with
+                    new recipes in the kitchen. I’m always on the lookout for
+                    exciting projects and collaborations. If you’re interested in
+                    working together or just want to chat about tech, feel free
+                    to reach out! I’m all ears. <br /> <br />
+                    Let’s build something amazing!
                   </p>
                 </div>
               )}

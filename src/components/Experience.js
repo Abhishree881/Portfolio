@@ -44,18 +44,18 @@ const Experience = () => {
             <div className="card-header">
               {/* <img src="/path/to/company-logo.png" alt="SuperBolter Logo" className="company-logo"/> */}
               <div>
-                <h3 className="job-title">Frontend Lead</h3>
+                <h3 className="job-title">Full Stack Developer</h3>
                 <a
                   href="https://www.linkedin.com/company/superbolter/"
                   target="_blank"
                 >
                   SuperBolter
                 </a>
-                <p>Dec’23 - Present | Bangalore</p>
+                <p>Dec’23 - Mar’25 | Bangalore</p>
               </div>
             </div>
             <div className="card-body">
-              <p>React Js, Redux, Axios, WebGL, Unity</p>
+              <p>React Js, Redux, Axios, WebGL, Unity, Ruby on Rails, PostgreSql</p>
               <ul>
                 <li>
                   Boosted website performance by 73%: Leveraged CDN
@@ -121,6 +121,55 @@ const Experience = () => {
                   30%
                 </li>
               </ul>
+            </div>
+          </Reveal>
+        </div>
+        <div className="card">
+          <Reveal keyframes={customAnimation1}>
+            <div className="card-header">
+              {/* <img src="/path/to/company-logo.png" alt="SuperBolter Logo" className="company-logo"/> */}
+              <div>
+                <h3 className="job-title">Software Engineer - I</h3>
+                <a
+                  href="https://www.linkedin.com/company/hashedin/"
+                  target="_blank"
+                >
+                  HashedIn by Deloitte
+                </a>
+                <p>Apr’25 - Present | Bangalore</p>
+              </div>
+            </div>
+            <div className="card-body">
+              {/* <p>React Js, Redux, Axios, WebGL, Unity</p>
+              <ul>
+                <li>
+                  Boosted website performance by 73%: Leveraged CDN
+                  implementation and optimized code modularity, achieving a 3x
+                  faster loading time and 15% decrease in bounce rate
+                </li>
+                <li>
+                  Developed intuitive onboarding experience: Optimized
+                  performance and enhanced first-time user experience,
+                  contributing to a 25% growth in daily active users
+                </li>
+                <li>
+                  Led development for major release: Strategically enhanced
+                  performance and refined the first-time user experience,
+                  contributing significantly to a 25% growth in daily active
+                  users
+                </li>
+                <li>
+                  Enhanced user journey: Architected and deployed a new
+                  onboarding flow that simplified user interactions, resulting
+                  in a notable 15% reduction in drop-off rates
+                </li>
+                <li>
+                  Enabled collaboration: Spearheaded the implementation of a
+                  feature enabling seamless collaboration with merchants,
+                  expanding platform functionality and fostering deeper user
+                  engagement
+                </li>
+              </ul> */}
             </div>
           </Reveal>
         </div>
